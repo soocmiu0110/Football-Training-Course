@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display:grid;
+        width:100%;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: 150px 50px 500px 100px;
+        grid-template-areas: 
+        "html html html"
+        "css css css"
+        "js js js"
+        "preview preview preview";
+        column-gap: 10px;
+        row-gap: 5px;
+        text-align: center;
+          }
+
+          .html{
+            grid-area:html;
+            background:rgb(25, 150, 50);
+            font-size: 5em;
+          }
+
+          .css{
+            grid-area:css;
+            background:blanchedalmond;
+            font-size: 1.5em;
+            word-spacing: 50px;
+        }
+          
+          
+          .js{
+            grid-area: js;
+            background: rgb(247, 246, 244);
+          }
+
+       
+          .preview{
+            grid-area:preview;
+            background-color: blanchedalmond;
+          }
+</style>
+<body>
+    <div class="container">
+        <div class="html">Football Training Course</div>
+        <div class="css">
+      <a href="">Courses</a>
+      <a href="">Sessions</a>
+      <a href="">Articel&Resources</a>
+        </div>
+        <div class="js">
+
+        <div class="preview">Preview</div>
+    </div>
+</body>
+</html>
